@@ -17,31 +17,34 @@ let flatten =function(array){
 }
 let print_recursev=function(array){
     let ans=[];
+    ans.push("[")
     let recu=function(arr){
+        // console.log(ans)
         if(!Array.isArray(arr)) return -1;
-        ans.push("[")
         arr.forEach((element,idx)=>{
             if(Array.isArray(element)){
-                ans.push("[")
-                if(element.length){
+                
+                if(element.length>=1){
+                    ans.push("[")
                     recu(element);
+                    ans.push("]")
                 }
-                ans.push("]")
-                if(idx<array.length-1)
+                if(idx<arr.length-1)
                 ans.push(",")
             }
             else{
                 ans.push(element)
-                if(idx<array.length-1)
+                if(idx<arr.length-1)
                 ans.push(",")
             }
         })
-        ans.push("]")
     }
     recu(array);
+    ans.push("]")
     return ans.join("");
 }
-
 let print =function(array){
-    console.log(JSON.stringify(array));
+    return (JSON.stringify(array));
 }
+
+export {print,print_recursev,flatten,deep_flatten}

@@ -1,8 +1,16 @@
 {
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "type": "module",
   "dependencies": {
-    "node": "^20.4.0"
+    "lodash": "^4.17.21"
   },
+  "devDependencies": {},
   "scripts": {
-    "print": "node test.js"
-  }
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
