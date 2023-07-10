@@ -12,3 +12,6 @@ let deep_flatten =function(array){
     recu(array);
     return ans;
 }
+let flatten =function(array){
+    return deep_flatten(array);
+}
