@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "node": "^20.4.0"
+  },
+  "scripts": {
+    "print": "node test.js"
   }
 }
