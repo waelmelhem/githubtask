@@ -41,3 +41,7 @@ let print_recursev=function(array){
     recu(array);
     return ans.join("");
 }
+
+let print =function(array){
+    console.log(JSON.stringify(array));
+}
