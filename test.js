@@ -4,3 +4,4 @@ console.log(print([1,1,1,1,[2],[3,[5],[5,7,[7]]]]))
 console.log(print_recursev([1,1,1,1,[2],[3,[5],[5,7,[7]]]]),2)
 console.log(flatten([[[1],[2],[3],8],7,9]))
 console.log(deep_flatten([[[1],[2],[3],8],7,9]));
+console.log("CP1")
