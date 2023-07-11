@@ -9,7 +9,7 @@ export let deep_get=function (object,path="",defualt=null){
     let path_array=path.split('.');
     let current_object=object;
     for(let i =0;i<path_array.length;i++){
-        if(typeof current_object==="" ){
+        if(typeof current_object !=="object" ){
             return defualt;
         }
         let node=path_array[i];
