@@ -46,5 +46,8 @@ let print_recursev=function(array){
 let print =function(array){
     return (JSON.stringify(array));
 }
+let edit=function (){
+    console.log("edit from remote");
 
+}
 export {print,print_recursev,flatten,deep_flatten}
